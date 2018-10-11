@@ -1,0 +1,306 @@
+header{
+  width: 100%;
+  min-height: 90px;
+  background-color: black;
+  position: fixed;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+#restaurant-logo{
+  margin-left: 20px;
+}
+#header-left{
+  color:white;
+}
+#header-right{
+  display:flex;
+  align-items: center;
+  min-width:555px;
+  margin: auto 20px auto 0;
+}
+
+.navbar{
+  padding: 0;
+}
+
+#nav-custom{
+  font-family: 'Asap', sans-serif;
+  font-size: 15px;
+  color:white;
+  transition: color .3s;
+  
+}
+
+
+#nav-custom:hover{
+  color:orange;
+}
+
+main{
+  position: relative;
+  top:90px;
+}
+
+
+
+.carousel-inner{
+  max-height: 650px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-indicators{
+  z-index: 3;
+}
+
+.carousel-image{
+  width: 100%;
+  height:auto;
+}
+
+#interior-photo-1, #interior-photo-2{
+  box-sizing: border-box;
+  border:8px ridge #ffa500;
+  border-radius:8px;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  width: 55%;
+  height:auto;
+  margin-bottom: 0px;
+}
+
+#interior-photo-1{
+  margin-right: 10px;
+}
+
+#interior-photo-2{
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  #interior-photo-1, #interior-photo-2{
+    width: 100%;
+    margin-right: 0px; margin-bottom: 10px; margin-left: 0;
+  }
+  #header-right{
+    min-width:auto;
+  }
+}
+
+#main-1{
+  width:93%;
+  margin: 45px auto 0 auto;
+}
+
+#main-2{
+  width:93%;
+  margin: 45px auto 0 auto;
+}
+
+.subtitle{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.main-1-text, .main-2-text, .main-3-text,.main-4-text{
+  font-family: 'Trirong', serif;
+}
+
+.main-3-text{
+  padding-top: 30px; padding-bottom: 30px;
+  margin: 10px auto 0 auto;
+  width:80%;
+}
+
+#main-3{
+  color:white;
+  display:block;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  background: rgba(3, 9, 70, 0.7);
+  
+}
+
+#main-3-sub{
+  font-size:40px;
+  padding-top:60px;
+}
+
+#main-3::after{
+  content:"";
+  background-image: url("../images/7.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  opacity:1;
+  position: absolute;
+  z-index: -1; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#bqfc-text{
+padding-bottom: 10px;
+}
+button.banquet-facilities-link{
+  padding-top: 20px; margin-bottom:80px;
+  -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family: 'Trirong', serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button.banquet-facilities-link:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+button.banquet-facilities-link:active {
+	position:relative;
+	top:1px;
+}
+
+#main-4{
+  
+  text-align: center;
+  position: relative;
+}
+
+.main-4-text{
+  padding-top: 30px; padding-bottom: 30px;
+  margin: 10px auto 0 auto;
+  width:80%;
+}
+
+.delivery-images{
+  display:block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height:100%;
+}
+
+.gh-logo{
+  display:inline-block;
+  height:50px;
+}
+
+.pm-logo{
+  display:inline-block;
+  margin-left: 50px;
+  height: 50px;
+}
+
+footer{
+  overflow: auto;
+  position: relative;
+  top:90px;
+  background-color: black;
+}
+
+#restaurant-logo-footer{
+  display:block;
+  margin-left: auto; margin-right: auto;
+}
+
+.footer-info{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:12px;
+}
+
+.footer-subtitle{
+  color:white;
+}
+
+
+hr{
+  text-align:left; margin-left:0;
+  background:white;
+  width:80%;
+  max-width: 300px;
+  margin-top:5px; margin-bottom:5px;
+}
+
+
+#footer-block{
+  box-sizing: border-box;
+  margin: 15px auto 0px auto;
+  width:100%;
+}
+
+.reservation{
+  display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 13px;
+    border: 0px solid #ffffff;
+    border-radius: 12px;
+    background: #ff2d2d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff2d2d), to(#711010));
+    background: -moz-linear-gradient(top, #ff2d2d, #711010);
+    background: linear-gradient(to bottom, #ff2d2d, #711010);
+    font: normal normal bold 14px arial;
+    color: #ffffff;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.reservation:hover,.reservation:focus{background: #5a0d0d;;
+  background: #ff3636;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff3636), to(#881313));
+    background: -moz-linear-gradient(top, #ff3636, #881313);
+    background: linear-gradient(to bottom, #ff3636, #881313);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.reservation:active {
+  background: #711010;
+    background: -webkit-gradient(linear, left top, left bottom, from(#711010), to(#711010));
+    background: -moz-linear-gradient(top, #711010, #711010);
+    background: linear-gradient(to bottom, #711010, #711010);
+}
+.reservation:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  margin: 0 4px -5px -4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABM0lEQVRIibXVPU7DQBAF4I9gIuSGxkoVwQWQKCg5IYegpOMSKALOAdSprEQEEKHw+EfGgvwsI400el692Tfj2eGnjfAUPtoDH7QMBRbhBfLwTfFsiHiKW8zj4Dp80fNN8HlwTbvkr3FglSDBKuLXOsltADeYJCjRJLjWwa3ER3wgTZMnwVnqSMulszw411kPTJkAHKgUwDJhgibJn4Oxr9UlWuJMOhU5npF3e7BMmKCxobHOMI74HZ874o11f9MM99rBuQ9sW3zwN+0qyDvxrvigglT2q4IRjiN+w9eOeGP9Hsy0NZ1pa70N3ij490HrK6CSXD/F/VdzU7xRQPtcFwkvXQRneYhzXAT4GAeO9vATXOMSdweqtfaAU9UUvu95+7Gq0S+4qsF66Zfa/bqrlzpL/xtZNqIGwbgJxgAAAABJRU5ErkJggg==") no-repeat left center transparent;
+  background-size: 100% 100%;
+}

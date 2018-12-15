@@ -12,11 +12,36 @@ header{
 
 #restaurant-logo{
   margin-left: 20px;
+  animation: restaurant-logo 2s ease-out;
 }
+
+@keyframes restaurant-logo {
+  0%   { 
+  opacity: 0.1;
+  transform: translateY(-80%); 		
+  }
+  100% { 
+  opacity: 1;
+  transform: translateY(0%); 
+  }
+}
+@keyframes header-right {
+  0%   { 
+  opacity: 0.1;
+  transform: translateX(80%); 		
+  }
+  100% { 
+  opacity: 1;
+  transform: translateX(0%); 
+  }
+}
+
+
 #header-left{
   color:white;
 }
 #header-right{
+  animation: header-right 3s ease-out;
   display:flex;
   align-items: center;
   min-width:555px;
@@ -32,9 +57,7 @@ header{
   font-size: 15px;
   color:white;
   transition: color .3s;
-  
 }
-
 
 #nav-custom:hover{
   color:orange;
@@ -58,9 +81,15 @@ main{
 }
 
 .carousel-image{
+  position: relative;
   width: 100%;
   height:auto;
 }
+
+
+
+
+
 
 #interior-photo-1, #interior-photo-2{
   box-sizing: border-box;
@@ -81,15 +110,7 @@ main{
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 768px){
-  #interior-photo-1, #interior-photo-2{
-    width: 100%;
-    margin-right: 0px; margin-bottom: 10px; margin-left: 0;
-  }
-  #header-right{
-    min-width:auto;
-  }
-}
+
 
 #main-1{
   width:93%;
@@ -237,6 +258,7 @@ footer{
   color:white;
   font-family: Arial, Helvetica, sans-serif;
   font-size:12px;
+  max-width: 300px;
 }
 
 .footer-subtitle{
@@ -303,4 +325,31 @@ hr{
   left: 0px;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABM0lEQVRIibXVPU7DQBAF4I9gIuSGxkoVwQWQKCg5IYegpOMSKALOAdSprEQEEKHw+EfGgvwsI400el692Tfj2eGnjfAUPtoDH7QMBRbhBfLwTfFsiHiKW8zj4Dp80fNN8HlwTbvkr3FglSDBKuLXOsltADeYJCjRJLjWwa3ER3wgTZMnwVnqSMulszw411kPTJkAHKgUwDJhgibJn4Oxr9UlWuJMOhU5npF3e7BMmKCxobHOMI74HZ874o11f9MM99rBuQ9sW3zwN+0qyDvxrvigglT2q4IRjiN+w9eOeGP9Hsy0NZ1pa70N3ij490HrK6CSXD/F/VdzU7xRQPtcFwkvXQRneYhzXAT4GAeO9vATXOMSdweqtfaAU9UUvu95+7Gq0S+4qsF66Zfa/bqrlzpL/xtZNqIGwbgJxgAAAABJRU5ErkJggg==") no-repeat left center transparent;
   background-size: 100% 100%;
+}
+
+
+@media only screen and (max-width: 768px){
+  #interior-photo-1, #interior-photo-2{
+    width: 100%;
+    margin-right: 0px; margin-bottom: 10px; margin-left: 0;
+  }
+  #header-right{
+    min-width:auto;
+  }
+  #footer-block{
+    text-align: center;
+  }  
+  #footer-test{
+    align-items: center;
+  }
+  .footer-info{
+    margin-left:auto; margin-right:auto;
+  }
+  hr{
+    text-align: center;
+    margin:auto;
+  }
+  .footer-margin-bottom{
+    margin-bottom: 30px;
+  }
 }
